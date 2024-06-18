@@ -1,0 +1,10 @@
+.task {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 4px;
+  width: 80%;
+}
