@@ -8,8 +8,15 @@ function Todo(props) {
     <div className="todo">
       <p>{props.todoText}</p>
       <div className="icon">
-        <FontAwesomeIcon icon={faPenToSquare} style={{ color: "white" }} />
-        <FontAwesomeIcon icon={faTrash} />
+        <FontAwesomeIcon
+          icon={faPenToSquare}
+          style={{ color: "white" }}
+          onClick={() => props.editTask(props.id)}
+        />
+        <FontAwesomeIcon
+          icon={faTrash}
+          onClick={() => props.deleteTask(props.id)}
+        />
       </div>
     </div>
   );
